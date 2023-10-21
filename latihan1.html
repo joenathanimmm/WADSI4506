@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan WEB Bersama Pak Aman</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: #0074d9;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 36px;
+        margin: 0;
+      }
+
+      button {
+        background-color: #0074d9;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+      }
+
+      button:hover {
+        background-color: #0056a7;
+      }
+
+      #demo {
+        font-size: 24px;
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      #gambar {
+        display: none;
+        margin-top: 20px;
+        max-width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Selamat Datang di Latihan Web Bersama Pak Aman</h1>
+    </header>
+    <button type="button" onclick="tampilkanGambar()">Click Me</button>
+    <p id="demo">Klik tombol di atas untuk mengubah konten.</p>
+    <img id="gambar" src="cv joe.png" alt="Gambar" />
+    <script>
+      function tampilkanGambar() {
+        var demo = document.getElementById("demo");
+        var gambar = document.getElementById("gambar");
+
+        demo.innerHTML = "Selamat datang di JavaScript!";
+        gambar.style.display = "block";
+      }
+    </script>
+  </body>
+</html>
